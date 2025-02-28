@@ -1,0 +1,814 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+ header{
+    background-color: black;
+    height: 170px;
+ }
+
+button{
+    display: none;
+}
+
+
+.logo img {
+
+    height: 100px;
+    width: 200px;
+    margin-left: 20px;
+
+}
+
+
+header section{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+header section article{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    
+}
+
+header section article div {
+
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+
+ header nav ul li{
+    margin-left: 30px;
+
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+
+    font-size: 12pt;
+    font-weight: bold;
+
+}
+
+header nav ul li a:hover{
+    color: white;
+    
+    border: 0px;
+    border-bottom: 1px;
+    
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+
+    padding: 2px;
+
+
+}
+
+.busqueda{
+    text-align: center;
+    margin: 20px;
+}
+.mosaico {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mosaico img{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.mosaico a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    text-align: center;
+    margin: 60px;
+    
+
+}
+
+.mosaico a h2{
+    display: none;
+
+}
+
+
+.colecciones article{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.colecciones figure img{
+    flex: 50%;
+}
+
+
+
+
+
+/*--------------------------------PRODUCTOS------------------------------------------*/
+
+#catalogo{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr
+    ;
+}
+
+#catalogo article{
+    margin-bottom: 20px;
+}
+
+.card{
+    align-items: center;
+    padding-bottom: 10px;
+    margin: 10px;
+
+    width: 400px;
+    border-radius: 0px;
+
+}
+.card img{
+    width: 100%;
+    height: 530px;
+}
+
+.card-body{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card-body a{
+    text-align: center;
+
+}
+
+.boton_compra{
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.boton_compra:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    border: 2px;
+    border-style: solid;
+    color: black;
+    border-color: rgb(0, 0, 0);
+    
+}
+
+#bannerProductos{
+    width: 100%;
+}
+
+
+
+/*------------------------------CONTACTO-----------------------------------------*/
+
+
+#contacto{
+    visibility: hidden;
+}
+
+
+#form article form {
+    width: 50%;
+
+   
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+  
+}
+
+
+#contacto{
+    visibility: hidden;
+}
+
+
+
+#form h2{
+    text-align: center;
+}
+
+form{
+    padding-bottom: 100px;
+
+    
+}
+
+form input,label{
+    margin: 10px;
+
+   
+}
+
+form label{
+    text-align: left;    
+    font-weight: bold;
+    font-size: 16pt;
+    color: rgb(0, 0, 0);
+}
+
+form input{
+    width: 98%;
+    height: 40px;
+    
+    border: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+    
+    
+    
+}
+
+form input{
+    min-width: 100%;
+    min-height: 40px;
+    height: 40px;
+    border: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+#form input[type="submit"]{
+    border: 2px;
+    border-style: solid;
+    background-color: black;
+    color:rgb(255, 255, 255);
+    width: auto;
+    
+}
+
+textarea{
+    min-width: 100%;
+    min-height: 40px;
+    height: 40px;
+    border: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+
+#form input[type="submit"]:hover{
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    border: 2px;
+    border-style: solid;
+}
+
+#sucursales h2{
+    text-align: center;
+}
+
+#sucursales div{
+    display: flex;
+    flex-direction: row;
+}
+
+#iframe{
+    text-align: center;
+    
+}
+iframe{
+    width: 80%;
+    height: 700px;
+}
+
+ 
+
+#sucursales div article{
+    flex: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#sucursales div article ul li {
+
+    font-size: 14pt;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+    
+}
+
+/*
+
+---------------------------PAGINA ERROR---------------------------------
+
+*/
+
+#error {
+    
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#error img {
+    width: 450px;
+}
+
+#mensaje {
+    max-width: 500px; 
+}
+
+#mensaje h4 {
+    color: #D9534F; 
+}
+
+.sentimos{
+    visibility: hidden;
+
+}
+
+
+
+
+
+/*----------------------------SOBRE NOSTROS----------------------------------*/
+
+#aboutus article {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    
+    
+}
+
+#aboutus h1{
+    text-align: center;
+    padding: 50px;
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+#aboutus img{
+    height: 600px;
+    width: 100%;
+}
+#aboutus article div{
+    flex-direction: row;
+    width: 50%;
+}
+
+#aboutus article div h2,p{
+    padding: 30px;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+#aboutus article div p{
+    font-size: 14pt;
+    text-align: justify;
+    font-weight: bolder;
+    
+}
+
+#publicidad{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#publicidad iframe{
+    width: 100%;
+    height: 675px;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    height: auto;
+
+    text-align: justify;
+    justify-content: center;
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+footer section nav ul li {
+    
+    list-style: none;
+}
+
+footer nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 13pt;
+    margin-bottom: 15px;
+}
+
+footer nav a:hover{
+    color: rgba(255, 255, 255, 0.582);
+}
+
+footer section{
+    margin: 40px;    
+}
+
+.barra{
+    border: 0px;
+    border-left: 2px;
+    border-style: solid;
+    border-color: white;
+    padding-left: 20px;
+}
+footer h2{
+    font-size: 15pt;
+    text-align: center;
+}
+
+.formasDePago{
+    width: 550px;
+    height: 250px;
+    padding-top: 50px;
+}
+
+/*---------------------------------------------PAGINADO------------------------------------------------*/
+
+.paginado {
+    display: grid;
+    place-items: center;
+    
+}
+
+.paginado ul li a{
+    color: black;
+}
+
+.post{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+.post article{
+    width: auto;
+    background-color: rgb(197, 195, 195);
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+/*------------------TRABAJA CON NOSTROS-----------------------------------------------------------------*/
+
+.trabajaConNosotros{
+    text-align: center;
+    margin: 30px;
+}
+
+
+
+
+.respMovil{
+    display: none;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*---------------------------RESPONSIVE---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/*TABLETS*/
+@media screen and (max-width: 1200px) and (min-width: 769px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header, main, footer{
+        width: 100%;
+    }
+
+    /*---PRODUCTOS---*/
+    #catalogo{
+        display: grid;
+        grid-template-columns:  1fr  1fr
+        ;
+    }
+    .card{
+        align-items: center;
+        padding-bottom: 0px;
+    
+        width: 100%;
+        height: 60%;
+        border-radius: 0px;
+        }
+    
+    /*----FOOTER---*/
+    /*----FOOTER----*/
+    footer{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    footer section {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .barra {
+        border: 0px;
+        border-left: none; 
+        padding-left: 0px;
+    }
+
+    .formasDePago {
+        width: 100%; 
+        height: auto;
+    }/*----FOOTER----*/
+    footer{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    footer section {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .barra {
+        border: 0px;
+        border-left: none; 
+        padding-left: 0px;
+    }
+
+    .formasDePago {
+        width: 100%; 
+        height: auto;
+    }
+
+    /*-----------HOMEEE-----------*/
+    .mosaico{
+        display: grid;
+        grid-template-columns:  1fr  1fr;
+        
+    }
+
+    /*---About us---*/
+    #aboutus{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+/*CELULARES*/
+@media screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header, main, footer{
+        width: 100%;
+    }
+
+    /*-------MENU DESPREGABLE--------*/
+    .logo{
+        margin-right: 5%;
+    }
+
+    #navegador{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center; 
+    }
+    
+    
+    .menu button{
+        display: grid;
+        place-items: center;
+    }
+    .menu nav{
+        display: none;
+    }
+    #navbar_mobile:target{
+        display: block;
+    }
+
+    header{
+        height: fit-content;
+
+    }
+    #navbar_mobile:target ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu button:hover nav{
+        display: block;
+    }
+    .menu img{
+        height: 50px;
+        width: 50px;
+         
+    }
+    .menu figure{
+        margin: 0px;
+        
+    }
+
+    button{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: black;
+        color: white;
+        border: 2px;
+        border-style: solid;
+        border-color: white;
+        font-weight: bold;
+
+    }
+
+    p{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    /*----PRODUCTOS----*/
+    #catalogo{
+        display: grid;
+        grid-template-columns:  1fr
+        ;
+    }
+    .card{
+    align-items: center;
+    padding-bottom: 0px;
+
+    width: 90%;
+    height: 60%;
+    border-radius: 0px;
+    }
+
+    /*-----HEADER-----*/
+    #Menu:hover nav{
+        display: block;
+    }
+
+    /*----FOOTER----*/
+    footer nav a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 13pts;
+        margin-bottom: 15px;
+    }
+    
+    footer nav a:hover{
+        color: rgba(255, 255, 255, 0.582);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+
+    }
+
+    footer section {
+        margin: 0px;
+        width: 100%;  
+    }
+
+    
+
+    .barra {
+        border: 0px;
+        border-left: none; 
+        padding-left: 0px;
+    }
+
+    .formasDePago {
+        width: 100%; 
+        height: auto;
+    }
+    
+    /*---INICIO---*/
+    .mosaico {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    /*----SOBRE NOSOTROS---*/
+    #aboutus article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #aboutus article div{
+        width: 100%;
+    }
+    #aboutus img{
+        height: 300px;
+    }
+
+    /*----CONTACTO----*/
+    #sucursales div {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #sucursales div article iframe{
+        width: 100%;
+    }
+
+    
+    .respMovil{
+        display: block;
+    }
+}
+
+
+.logoSesion a{
+    width: 30px;
+    height: 30px;
+}
+
+.logoSesion a:hover{
+    border: none;
+    transition: none;
+}
+
+.logoSesion a img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+
+
+
+
